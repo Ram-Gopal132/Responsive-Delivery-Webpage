@@ -1,0 +1,121 @@
+/* header and nav */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    z-index: 1000;
+    transition: background-color .4s;
+    box-shadow: .4s;
+
+}
+
+.nav{
+    position: relative;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    background-color: #946d61;
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    text-decoration: none;
+}
+
+.nav__logo i{
+    font-size: 1.5rem;
+    color: white;
+    transition: color .4s;
+    
+}
+
+.nav__logo span{
+    font-weight: bold;
+   color: white;
+    transition: color .4s;
+   
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+    column-gap: 1.7rem;
+    list-style: none;
+    color:white;
+}
+
+.nav_link{
+    color: white;
+    transition: color .4s;
+    text-decoration: none;
+}
+
+.change-theme{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color .4s;
+}
+
+.nav__toggle{
+    display: flex;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+
+/* Navigation for mobile */
+
+
+@media  screen and (max-width:1150px) {
+    .nav_menu{
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 60%;
+        box-shadow: var(--shadow-big);
+        background-color: var(--background-color);
+        padding: 3.5rem;
+        border-radius: 3rem;
+        border: 3px solid yellowgreen;
+        transition: left .4s,background-color .4s, box-shadow .4s;
+    }
+
+    .nav_list{
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        
+    }
+
+    .nav_link{
+        color: #ff5722;
+        font-weight: 450;
+        transition: color .4s;
+        text-decoration: none;
+    }
+
+    .nav_link:hover{
+        color: var(--primary-color);
+    }
+
+    .change-theme{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.25rem;
+        color: rgba(0, 0, 0, 0.68);
+        cursor: pointer;
+    }
+}
