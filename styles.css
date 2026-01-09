@@ -135,6 +135,10 @@
     transition: background-color .4s, box-shadow .4s, color .4s;
 }
 
+.home__img{
+    width: 100%;
+    height: 50%;
+}
 
 
 
